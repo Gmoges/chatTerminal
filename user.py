@@ -2,8 +2,9 @@
 import socket
 import threading
 
-host = '127.0.0.1'  # Use Kali IP or 127.0.0.1 if on same machine
-port = 4444
+host = input("Enter server IP address: ")  # Example: 10.0.2.15
+port = int(input("Enter port number: "))   # Example: 4444
+
 
 client = socket.socket()
 client.connect((host, port))

@@ -3,7 +3,7 @@ import socket
 import threading
 
 host = '0.0.0.0'
-port = 4444
+port = int(input("Enter port to listen on (e.g. 4444): "))
 
 server = socket.socket()
 server.bind((host, port))
